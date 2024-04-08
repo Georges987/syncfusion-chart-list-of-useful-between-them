@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:graphe/views/hbarre.dart';
+import 'package:graphe/views/charts/hbarre.dart';
+import 'package:graphe/views/charts/part.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -22,6 +23,14 @@ class _HomePageState extends State<HomePage> {
             onTap: () => Navigator.of(context).push(
               MaterialPageRoute(
                 builder: (context) => const HBar(),
+              ),
+            ),
+          ),
+          ListTile(
+            title: const Text('Diagramme circulaire'),
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => const Part(),
               ),
             ),
           ),
