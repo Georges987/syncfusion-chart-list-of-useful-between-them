@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:graphe/views/charts/avatarRow.dart';
+import 'package:graphe/views/charts/dynamicRadialCircle.dart';
 import 'package:graphe/views/charts/hbarre.dart';
 import 'package:graphe/views/charts/part.dart';
 
@@ -40,6 +41,14 @@ class _HomePageState extends State<HomePage> {
             onTap: () => Navigator.of(context).push(
               MaterialPageRoute(
                 builder: (context) => const RadialBar(),
+              ),
+            ),
+          ),
+          ListTile(
+            title: const Text('Dynamic radial circle'),
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => const DynamicRadialCircle(),
               ),
             ),
           ),
